@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About AcneDoc – Honest Acne Advice for Kenyans</title>
+  <meta name="description" content="AcneDoc helps Kenyans fight acne with real, practical advice tailored to our climate, skin tones and common myths. Not medical advice – see a dermatologist for severe cases.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+</head>
+<body>
+
+  <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+  <nav style="text-align:center; margin:1rem 0; font-weight:500; padding:1rem 0; background:var(--surface);">
+    <a href="index.html" style="color:var(--accent); margin:0 1.5rem; text-decoration:none;">Home</a>
+    <a href="faq.html" style="color:var(--accent); margin:0 1.5rem; text-decoration:none;">FAQ</a>
+    <a href="products.html" style="color:var(--accent); margin:0 1.5rem; text-decoration:none;">Products</a>
+    <a href="about.html" style="color:var(--accent); margin:0 1.5rem; text-decoration:none;">About</a>
+    <a href="blog.html" style="color:var(--accent); margin:0 1.5rem; text-decoration:none; font-weight:700;">Blog</a>
+    <a href="contact.html" style="color:var(--accent); margin:0 1.5rem; text-decoration:none;">Contact</a>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <img 
+        src="images/acnedoc-logo.png" 
+        alt="AcneDoc logo" 
+        class="logo" 
+        loading="lazy"
+      >
+
+      <p class="tagline" style="text-align:center; max-width:800px; margin:1rem auto 2.5rem; font-size:1.35rem; color:var(--text-light);">
+        Honest, practical acne advice made for Kenyans
+      </p>
+
+      <div class="hero-image-wrapper">
+        <img 
+          src="images/hero-clear-skin.jpg" 
+          alt="Clear glowing skin inspiration" 
+          class="hero-bg" 
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container" style="max-width:900px;">
+      <h2 style="text-align:center; margin-bottom:2.5rem;">About AcneDoc</h2>
+
+      <div style="font-size:1.1rem; line-height:1.8; color:var(--text-light);">
+        <p>
+          AcneDoc was created to give real, no-nonsense help to Kenyans dealing with acne — whether you're in Nairobi, Mombasa, Kisumu, or anywhere else facing humidity, pollution, heat, and stubborn dark marks.
+        </p>
+
+        <p>
+          We know the struggle is different here: myths like "just wash more" or "it's only teenagers", expensive imported treatments that don't suit our climate, and hyperpigmentation that lasts way longer on melanin-rich skin. That's why this site focuses on:
+        </p>
+
+        <ul style="margin:1.5rem 0 1.5rem 2rem; list-style-type:disc;">
+          <li>Simple, affordable routines using products actually available in Kenya (MYDAWA, Jumia, Goodlife, Haltons, etc.)</li>
+          <li>Honest advice about what really works (and what doesn't) — no hype, no quick fixes</li>
+          <li>Respect for our skin tones — preventing and fading dark spots is a big priority</li>
+          <li>Clear warnings: this is not medical advice. Severe, cystic, or scarring acne needs a dermatologist.</li>
+        </ul>
+
+        <p>
+          The goal is simple: help more Kenyans get clearer, healthier skin without wasting money or damaging their barrier with bad advice or harsh home remedies.
+        </p>
+
+        <p style="margin-top:2.5rem;">
+          Have questions, progress to share, or need help choosing products? <a href="contact.html" style="color:var(--accent); font-weight:600;">Reach out</a> — we're here to support you.
+        </p>
+      </div>
+
+      <div style="text-align:center; margin:4rem 0 2rem;">
+        <a href="faq.html" class="btn btn-primary" style="margin:0 1rem 1rem;">Read the FAQ</a>
+        <a href="products.html" class="btn btn-outline" style="margin:0 1rem;">See Recommended Products</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 AcneDoc – Helping Kenyans achieve clearer skin.<br>
+      Not medical advice — consult a dermatologist for severe cases.<br>
+      Email: <a href="mailto:info@acnedoc.co.ke">info@acnedoc.co.ke</a></p>
+    </div>
+  </footer>
+ <!-- Floating WhatsApp Button -->
+<a 
+  href="https://wa.me/254748428735?text=Hi%20AcneDoc%2C%20I%20have%20a%20question%20about%20my%20acne%20skin%20care..." 
+  class="whatsapp-float" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  aria-label="Chat with us on WhatsApp"
+>
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+    alt="WhatsApp icon" 
+    width="60" 
+    height="60"
+  >
+</a>
+  <script>
+    const toggle = document.querySelector('.theme-toggle');
+    const html = document.documentElement;
+    toggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme') || 'light';
+      const next = current === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', next);
+      toggle.textContent = next === 'light' ? '🌙' : '☀️';
+    });
+  </script>
+
+  <a href="#" class="back-to-top" style="position:fixed; bottom:30px; right:30px; background:var(--accent); color:white; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; box-shadow:0 4px 12px rgba(0,0,0,0.2); opacity:0; transition:opacity 0.3s; z-index:1000;">↑</a>
+  <script>
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      backToTop.style.opacity = window.scrollY > 300 ? '1' : '0';
+    });
+  </script>
+</body>
+</html>
